@@ -1,5 +1,3 @@
-console.log('serving public js files');
-
 const weatherForm = document.getElementById('weather-form');
 const addressInput = document.getElementById('address-input');
 const loadingNote = document.querySelector('.loading-note');
@@ -24,7 +22,6 @@ weatherForm.addEventListener('submit', (e) => {
           forecastInfo.textContent = data.error;
         } else {
           loadingNote.textContent = "";
-          console.log(data);
           forecastInfo.innerHTML = `
           Location: ${data.location}. <br>
           Forecast: ${data.forecast}.
