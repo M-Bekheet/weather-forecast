@@ -12,6 +12,11 @@ body{
   min-height: 100vh;
 }
 
+p{
+  line-height: 1.4em;
+  letter-spacing: 0.8px;
+}
+
 .main-content{
   flex-grow: 1;
 }
