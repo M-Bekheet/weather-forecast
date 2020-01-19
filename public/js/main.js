@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', (e) => {
   const address = addressInput.value.replace(/[^\w\s]/gi, '!');
 
   if(address.length > 0){
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {
